@@ -11,14 +11,13 @@ body{
   color:#666;
   background-color: #111111;
 
-  display:flex;
-  flex-direction: row;
 
+  overflow: hidden; /* Hide scrollbars */
 }
 
 /* COLUMN 1 - HEADER */
 
-header{
+aside{
   margin: 0; 
   padding: 0;
   flex-grow: 0;
@@ -33,7 +32,7 @@ header{
   left: 0;
   margin: 0; 
   padding: 0;
-  background: #222222;
+  background: #22222287;
 
   height:100%;
   display: flex;
@@ -48,7 +47,6 @@ header{
   text-decoration: none;
   display: block;
   color: aliceblue;
-  background-color: #222222;
   font-size: 20px;
   transition: font-size 0.2s ease-in;
   text-decoration: none;
@@ -77,30 +75,36 @@ header{
   flex-direction: column;
 }
 
-
 .heading {
   color: aliceblue;
   position: absolute;
+  left: 25%;
 }
 
 .heading1 {
 top: 30%;
-left: 20%;
-font-size: 30px;
+
+font-size: 40px;
+
 
 }
 
 .heading2 {
-  top: 35%;
-  left: 20%;
-  font-size: 40px;
+  top: 37%;
+  font-size: 50px;
+  font-weight: bold;
 
 }
 
 .heading3 {
-  top: 40%;
-  left: 20%;
-  font-size: 30px;
+  top: 45%;
+  font-size: 40px;
+}
+
+.heading4 {
+  top: 60%;
+  font-size: 40px;
+  text-decoration: underline;
 }
 
 .slideshow-container {
