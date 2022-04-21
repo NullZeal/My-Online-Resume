@@ -19,7 +19,6 @@ body{
 /* COLUMN 1 - HEADER */
 
 header{
-  flex-direction: column;
   margin: 0; 
   padding: 0;
   flex-grow: 0;
@@ -78,22 +77,35 @@ header{
   flex-direction: column;
 }
 
-.slideshow-container {
-  opacity: 0.2;
-}
 
 .heading {
-  font-size: 40px;
-  background-color: rgba(224, 206, 206, 0);
+  color: aliceblue;
   position: absolute;
 }
 
 .heading1 {
-top: 20%;
+top: 30%;
 left: 20%;
+font-size: 30px;
+
 }
 
+.heading2 {
+  top: 35%;
+  left: 20%;
+  font-size: 40px;
 
+}
+
+.heading3 {
+  top: 40%;
+  left: 20%;
+  font-size: 30px;
+}
+
+.slideshow-container {
+  opacity: 0.2;
+}
 
 .mySlides {
   max-height:200px;
