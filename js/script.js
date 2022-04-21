@@ -1,5 +1,5 @@
 var slideIndex = 1;     // slides indexed from 1
-var timeout = setTimeout(automaticChange, 10000);  // To avoid automatic change, comment this line
+var timeout = setTimeout(automaticChange, 8000);  // To avoid automatic change, comment this line
 
 showSlides(slideIndex);
 automaticChange();
@@ -19,5 +19,5 @@ function showSlides(n) {
 function automaticChange() {
     slideIndex++;
     showSlides(slideIndex);
-    timeout = setTimeout(automaticChange, 10000);   // call again automaticChange() after 7s
+    timeout = setTimeout(automaticChange, 8000);   // call again automaticChange() after 7s
 }
