@@ -25,14 +25,19 @@ var rotation = 0;
 
 function rotateMeClockWise(){
     rotation += 90;
-    if (rotation === 360)
+    if (rotation === 3600)
     rotation = 0;
-    document.querySelector("#imgz").style.transform = `rotate(${rotation}deg)`;
+    document.querySelector("#julienPicture").style.transform = `rotate(${rotation}deg)`;
+    document.getElementById("counter").innerHTML = rotation;
 }
 
 function rotateMeCounterClockWise(){
     rotation -= 90;
-    if (rotation === 0)
-    rotation = 360;
-    document.querySelector("#imgz").style.transform = `rotate(${rotation}deg)`;
+    if (rotation === -3600)
+    rotation = 0;
+    document.querySelector("#julienPicture").style.transform = `rotate(${rotation}deg)`;
+    document.getElementById("counter").innerHTML = rotation;
 }
+
+var counter = rotation;
+document.getElementById("counter").innerHTML = rotation;
