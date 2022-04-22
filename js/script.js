@@ -20,3 +20,19 @@ function automaticChange() {
     showSlides(slideIndex);
     timeout = setTimeout(automaticChange, 8000);   // call again automaticChange() after 7s
 }
+
+var rotation = 0;
+
+function rotateMeClockWise(){
+    rotation += 90;
+    if (rotation === 360)
+    rotation = 0;
+    document.querySelector("#imgz").style.transform = `rotate(${rotation}deg)`;
+}
+
+function rotateMeCounterClockWise(){
+    rotation -= 90;
+    if (rotation === 0)
+    rotation = 360;
+    document.querySelector("#imgz").style.transform = `rotate(${rotation}deg)`;
+}

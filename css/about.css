@@ -103,6 +103,7 @@ img {
     top: 50%;
     position: absolute;
 }
+
 .picture {
     position: relative;
     display: inline-block;
@@ -113,6 +114,22 @@ img {
     margin-top: 2%;
     border: 4px solid rgba(238, 238, 238, 0.885);
     bottom:10%;
+
+}
+
+#imgz {
+    -webkit-transition: -webkit-transform 2s ease-out;
+    -moz-transition:    -moz-transform 2s ease-out;
+    -o-transition:      -o-transform 2s ease-out;
+    -ms-transition:     -ms-transform 2s ease-out;
+    transition: all 1s ease;
+}
+
+.picture button{
+    position: relative;
+    top: 120%;
+    padding:20px;
+    width:49%;
 }
 
 .infos{
