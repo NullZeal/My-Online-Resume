@@ -1,2 +1,3 @@
-# My-Online-Resume
- Html/css/javascript Project for learning purpose...and for fun!
+# myOnlineResume
+
+Web project for learning purpose...and for fun!
