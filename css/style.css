@@ -219,7 +219,7 @@ img {
   }
 
   .navigation a:hover {
-    background: #333333a6;
+  background: #333333a6;
     font-size: 20px;
     cursor: pointer;
   }
