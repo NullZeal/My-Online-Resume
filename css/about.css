@@ -1,44 +1,38 @@
-/* https://avatars.githubusercontent.com/u/89992341?v=4 */
-
 body{
     font-size:16px;
     
     font-family:"Menlo", sans-serif;
     font-weight:400;
     line-height:1.8em;
-    
     background-color: #111111;
-  
-  }
-  
-  
-  /* ASIDE CONTENT */
-  
-  .navigation {
+}
+
+.background{
     position: fixed;
+}
   
+/* ASIDE CONTENT */
+  
+.navigation {
+    position: fixed;
     top: 0;
     left: 0;
-  
     background: #22222287;
     height:100%;
     width: 20%;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-  
-  }
-  
-  .navigation li {
+}
+
+.navigation li {
     flex-basis: 10%;
     flex-shrink: 1;
     padding-left: 20%;
     padding-right: 20%;
-  }
-  
-  .navigation a {
+}
+
+.navigation a {
     text-decoration: none;
     display: block;
     color: aliceblue;
@@ -47,40 +41,38 @@ body{
     text-decoration: none;
     padding-top: 10%;
     padding-bottom: 10%;
-  
+
     text-align: center;
     flex-direction: row;
-  }
-  
-  .navigation a:hover {
+}
+
+.navigation a:hover {
     background: #333333a6;
     font-size: 30px;
     cursor: pointer;
-  }
-  
-  /* END OF ASIDE CONTENT */
-  
-  
-  /* MAIN PAGE CONTENT */
-  
-  .identityDisplay {
+}
+
+/* END OF ASIDE CONTENT */
+
+
+/* MAIN PAGE CONTENT */
+
+.identityDisplay {
     position: absolute;
     left:20%;
     width: 80%;
     height:100%;
-  }
-
-  .heading {
+}
+.centeredText {
     color: aliceblue;
     position: relative;
     text-align: center;  }
-  
-  .aboutMe {
-  margin-top: 10%;
-  font-size: 40px;
-  }
 
-  .aboutMe:before {
+.aboutMe {
+    margin-top: 10%;
+    font-size: 40px;
+}
+.aboutMe:before {
     content: "";
     display: block;
     width: 40%;
@@ -89,9 +81,9 @@ body{
     left: 0;
     top: 50%;
     position: absolute;
-  }
-  
-  .aboutMe:after {
+}
+
+.aboutMe:after {
     content: "";
     display: block;
     width: 40%;
@@ -100,175 +92,96 @@ body{
     right: 0;
     top: 50%;
     position: absolute;
-  }
-  
-  .heading2 {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  
-  .heading3 {
-    top: 45%;
-    font-size: 40px;
-  }
-  
-  .heading4 {
-    top: 60%;
-    font-size: 40px;
-    text-decoration: underline;
-  }
-  
-  .slideshow-container {
-    opacity: 0.2;
-  }
-  
-  img {
+}
+.picture {
+    opacity: 1;
+}
+
+img {
     max-width: 100%;
-  }
-  
-  /* Fading animation */
-  /* The prefix -webkit- is for Safari browser */
-  .fade {
+}
+
+/* Fading animation */
+/* The prefix -webkit- is for Safari browser */
+.fade {
     -webkit-animation-name: fade;            
     -webkit-animation-duration: 2s;
-  
+    
     animation-name: fade;
     animation-duration: 2s;
-  }
-  
-  /* the -webkit-animation fade */
-  @-webkit-keyframes fade {
+}
+
+/* the -webkit-animation fade */
+@-webkit-keyframes fade {
     from {
         opacity: .1
     }
-  
+
     to {
-        opacity: 1
+      opacity: 1
     }
-  }
-  
-  /* the animation fade */
-  @keyframes fade {
+}
+
+/* the animation fade */
+@keyframes fade {
     from {
         opacity: .1
     }
-  
+
     to {
         opacity: 1
     }
-  }
-  
-  /* END OF MAIN PAGE CONTENT */
-  
-  /* SMALLER SCREENS DISPLAY CHANGES */
-  
-  @media all and (max-width: 800px) {
-      
-    .navigation {
-      flex-flow: column wrap;
-      width: 30%;
-    }
-  
-    .navigation a { 
-      text-align: center; 
-      padding: 20px;
-      font-size: 15px; 
-    }
-  
-    .navigation li:last-of-type a {
-      border-bottom: none;
-    }
-  
-    .navigation a:hover {
-        background: #333333a6;
-      font-size: 20px;
-      cursor: pointer;
-    }
-  
-    .mySlides {
-      height: 1000px;
-    }
-  
-    .main-page {
-      height: 1000px;
-    }
-    img {
-      position: absolute;
-      height: 700px;
-    }
-  
-    .heading {
-      left:40%
-    }
-    .heading1 {
-      top: 30%;
-      
-      font-size: 15px;
-      }
-      
-      .heading2 {
-        top: 33%;
-        font-size: 15px;
-        font-weight: bold;
-      }
-      
-      .heading3 {
-        top: 45%;
-        font-size: 15px;
-      }
-      
-      .heading4 {
-        top: 69%;
-        font-size: 15px;
-        text-decoration: underline;
-      }
-  }
-  
-  @media all and (max-width: 400px) {
+}
+
+/* END OF MAIN PAGE CONTENT */
+
+/* SMALLER SCREENS DISPLAY CHANGES */
+
+@media all and (max-width: 800px) {
     
     .navigation {
-      flex-flow: column wrap;
-      width: 50%;
+        flex-flow: column wrap;
+        width: 30%;
     }
-  
+
     .navigation a { 
-      text-align: center; 
-      padding: 20px;
-      font-size: 15px; 
+        text-align: center; 
+        padding: 20px;
+        font-size: 15px; 
     }
-  
+
     .navigation li:last-of-type a {
-      border-bottom: none;
+        border-bottom: none;
     }
-  
+
     .navigation a:hover {
         background: #333333a6;
-      font-size: 20px;
-      cursor: pointer;
+        font-size: 20px;
+        cursor: pointer;
     }
-  
+
     .mySlides {
-      height: 1000px;
+        height: 1000px;
     }
-  
+
     .main-page {
-      height: 1000px;
+        height: 1000px;
     }
   
-    img {
-      position: absolute;
-      height: 900px;
+    img{
+        position: absolute;
+        height: 700px;
     }
-  
+
     .heading {
-      left:55%
+        left:40%
     }
-  
+    
     .heading1 {
-      top: 30%;
-      font-size: 15px;
+        top: 30%;
+        font-size: 15px;
     }
-  
+    
     .heading2 {
       top: 33%;
       font-size: 15px;
@@ -285,4 +198,67 @@ body{
       font-size: 15px;
       text-decoration: underline;
     }
+}
+
+@media all and (max-width: 400px) {
+  
+  .navigation {
+    flex-flow: column wrap;
+    width: 50%;
+  }
+
+  .navigation a { 
+    text-align: center; 
+    padding: 20px;
+    font-size: 15px; 
+  }
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+
+  .navigation a:hover {
+      background: #333333a6;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .mySlides {
+    height: 1000px;
+  }
+
+  .main-page {
+    height: 1000px;
+  }
+
+  img {
+    position: absolute;
+    height: 900px;
+  }
+
+  .heading {
+    left:55%
+  }
+
+  .heading1 {
+    top: 30%;
+    font-size: 15px;
+  }
+
+  .heading2 {
+    top: 33%;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .heading3 {
+    top: 45%;
+    font-size: 15px;
+  }
+  
+  .heading4 {
+    top: 69%;
+    font-size: 15px;
+    text-decoration: underline;
+  }
   }
