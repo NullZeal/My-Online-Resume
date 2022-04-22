@@ -1,5 +1,4 @@
 var slideIndex = 1;     // slides indexed from 1
-var timeout = setTimeout(automaticChange, 8000);  // To avoid automatic change, comment this line
 
 showSlides(slideIndex);
 automaticChange();

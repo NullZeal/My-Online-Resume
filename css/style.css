@@ -8,7 +8,6 @@ body{
   font-weight:400;
   line-height:1.8em;
   
-  color:#666;
   background-color: #111111;
 
   overflow: hidden;
@@ -23,15 +22,22 @@ body{
   top: 0;
   left: 0;
 
-  margin: 0; 
-  padding: 0;
   background: #22222287;
   height:100%;
+  width: 20%;
   
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 
+}
+
+.navigation li {
+  flex-basis: 10%;
+  flex-shrink: 1;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .navigation a {
@@ -41,17 +47,14 @@ body{
   font-size: 20px;
   transition: font-size 0.05s ease-in;
   text-decoration: none;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+
   text-align: center;
   flex-direction: row;
 }
 
-.navigation li {
-  flex-basis: 100px;
-  flex-shrink: 1;
-  width:250px;
-}
+
 
 .navigation a:hover {
   background: #333333;
@@ -64,11 +67,6 @@ body{
 
 /* MAIN PAGE CONTENT */
 
-.main-page{
-  display: flex;
-  flex-direction: column;
-}
-
 .heading {
   color: aliceblue;
   position: absolute;
@@ -77,17 +75,13 @@ body{
 
 .heading1 {
 top: 30%;
-
 font-size: 40px;
-
-
 }
 
 .heading2 {
   top: 37%;
   font-size: 50px;
   font-weight: bold;
-
 }
 
 .heading3 {
@@ -105,13 +99,8 @@ font-size: 40px;
   opacity: 0.2;
 }
 
-.mySlides {
-  max-height:200px;
-}
-
 img {
   max-width: 100%;
-  padding: 0;
 }
 
 /* Fading animation */
@@ -146,21 +135,16 @@ img {
   }
 }
 
-
-
 /* END OF MAIN PAGE CONTENT */
 
 /* SMALLER SCREENS DISPLAY CHANGES */
 
-@media (max-width: 320px) {
+/* @media (max-width: 400px) {
 
-  .navigation li {
-    flex-basis:10px;
-    width:65px;
-  }
 
   .heading{
     font-size: 5px;
+    left: 60%;
   }
 
   .heading1 {
@@ -186,56 +170,140 @@ img {
       text-decoration: underline;
     }
 
-    .navigation {
-      position: absolute;
-    
-      top: 0;
-      left: 0;
-      width: 65px;
-      margin: 0; 
-      padding: 0;
-      background: #22222287;
-      height:100%;
-      
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-}
+  .navigation {
+    position: fixed;
+    width: 50%;
+  }
+
+  .navigation li {
+    flex-basis:10%;
+    padding:15px;
+  }
+} */
+
+
 
 @media all and (max-width: 800px) {
-  
-  .navigation {
-    justify-content: space-around;
-  }
-}
-
-@media all and (max-width: 600px) {
     
   .navigation {
     flex-flow: column wrap;
-    padding: 0;
+    width: 30%;
   }
 
   .navigation a { 
     text-align: center; 
-    padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255,0.3); 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    font-size: 10px; 
+    padding: 20px;
+    font-size: 15px; 
   }
 
-  .navigation a:hover {
-    background: #1565C0;
-    font-size: 10px;
-    cursor: pointer;
-  }
-  
   .navigation li:last-of-type a {
     border-bottom: none;
   }
 
-  /* ------------------------------ */
+  .navigation a:hover {
+    background: #333333;
+    font-size: 20px;
+    cursor: pointer;
+  }
 
+  .mySlides {
+    height: 1000px;
+  }
+
+  .main-page {
+    height: 1000px;
+  }
+  img {
+    position: absolute;
+    height: 700px;
+  }
+
+  .heading {
+    left:40%
+  }
+  .heading1 {
+    top: 30%;
+    
+    font-size: 15px;
+    }
+    
+    .heading2 {
+      top: 33%;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    
+    .heading3 {
+      top: 45%;
+      font-size: 15px;
+    }
+    
+    .heading4 {
+      top: 69%;
+      font-size: 15px;
+      text-decoration: underline;
+    }
+}
+
+@media all and (max-width: 400px) {
+  
+  .navigation {
+    flex-flow: column wrap;
+    width: 50%;
+  }
+
+  .navigation a { 
+    text-align: center; 
+    padding: 20px;
+    font-size: 15px; 
+  }
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+
+  .navigation a:hover {
+    background: #333333;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .mySlides {
+    height: 1000px;
+  }
+
+  .main-page {
+    height: 1000px;
+  }
+
+  img {
+    position: absolute;
+    height: 900px;
+  }
+
+  .heading {
+    left:55%
+  }
+
+  .heading1 {
+    top: 30%;
+    font-size: 15px;
+  }
+
+  .heading2 {
+    top: 33%;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .heading3 {
+    top: 45%;
+    font-size: 15px;
+  }
+  
+  .heading4 {
+    top: 69%;
+    font-size: 15px;
+    text-decoration: underline;
+  }
 }
