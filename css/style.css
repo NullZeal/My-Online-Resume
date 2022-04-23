@@ -55,7 +55,7 @@ body{
 
 
 .navigation a:hover {
-  background: #333333a6;
+  background: #656565b5;
   font-size: 30px;
   cursor: pointer;
 }
@@ -188,7 +188,7 @@ img {
   }
 
   .navigation a:hover {
-    background: #333333a6;
+    background: #656565b5;
     font-size: 20px;
     cursor: pointer;
   }
@@ -203,6 +203,11 @@ img {
   img {
     position: absolute;
     height: 700px;
+  }
+
+  #img3 {
+    width: 50%;
+    height:50%;
   }
 
   .heading {
@@ -250,7 +255,7 @@ img {
   }
 
   .navigation a:hover {
-  background: #333333a6;
+    background: #656565b5;
     font-size: 20px;
     cursor: pointer;
   }

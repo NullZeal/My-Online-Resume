@@ -51,7 +51,7 @@ img {
 }
 
 .navigation a:hover {
-    background: #3333336f;
+    background: #656565b5;
     font-size: 30px;
     cursor: pointer;
 }
@@ -239,7 +239,7 @@ img {
     }
 
     .navigation a:hover {
-        background: #333333a6;
+        background: #656565b5;
         font-size: 20px;
         cursor: pointer;
     }
@@ -302,7 +302,7 @@ img {
   }
 
   .navigation a:hover {
-      background: #333333a6;
+    background: #656565b5;
     font-size: 20px;
     cursor: pointer;
   }
