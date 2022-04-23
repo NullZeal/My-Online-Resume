@@ -52,7 +52,6 @@ img {
 
 .navigation a:hover {
     background: #3333336f;
-    border-radius: 40%;
     font-size: 30px;
     cursor: pointer;
 }
