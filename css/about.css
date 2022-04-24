@@ -171,6 +171,14 @@ button:hover{
     transition: all 1s ease-in-out;
 }
 
+.infos .cw:hover{
+    transform: rotate(-360deg);
+    -moz-transition:    -moz-transform 1s ease-out;
+    -o-transition:      -o-transform 1s ease-out;
+    -ms-transition:     -ms-transform 1s ease-out;
+    transition: all 1s ease-in-out;
+}
+
 .infos td{
     padding: 15px;
 }
