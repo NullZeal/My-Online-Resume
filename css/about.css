@@ -65,7 +65,7 @@ img {
     position: absolute;
     left:20%;
     width: 80%;
-    height:140%;
+    height:max-content;
     background-color: rgba(179, 188, 194, 0.848);
     border-style: solid;
     border-width: 5px;
@@ -107,16 +107,14 @@ img {
 }
 
 .picture {
-    position: relative;
+    position: absolute;
     display: inline-block;
     opacity: 0.95;
     background-color:rgba(208, 207, 207, 0.69);
     width: 25%;
     border-radius: 10% 10% 3% 10%;
-    margin-top: 10%;
     margin-left:3%;
     border: 4px solid rgba(11, 11, 11, 0.564);
-    bottom:16%;
 }
 
 #julienPicture {
@@ -162,19 +160,17 @@ button:hover{
     position: relative;
     padding:50px;
     border-radius: 2%;
-    width:93%;
     color:rgb(39, 41, 43);
-    width:45%;
     font-family: Calibri;
-    font-size: large;
-    font-family: Calibri;
-    font-size: larger;
+    font-size: larger;    
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
 }
 
-.infos img {
-    max-width: 50%;
-    margin-left:240px;
+.infos .icons {
     transition: all 1s ease-in-out;
+    width: 100px;
 }
 
 /* .infos img:hover{
@@ -193,14 +189,6 @@ button:hover{
     transition: all 1s ease-in-out;
 } */
 
-.infos td{
-    padding: 15px;
-}
-
-.infos td:nth-child(2) {
-    padding-left:25px;
-
-}
 
 .summary {
     position: relative;
@@ -211,6 +199,7 @@ button:hover{
     font-family: Calibri;
     font-size: large;
     display: inline-block;
+    margin-bottom: 5%;
 }
 
 #summary{
@@ -264,128 +253,48 @@ button:hover{
 
 /* SMALLER SCREENS DISPLAY CHANGES */
 
-@media all and (max-width: 800px) {
-    
-    .navigation {
-        flex-flow: column wrap;
-        width: 30%;
+@media all and (max-width: 1000px) {
+
+    .summary{
+        text-align: justify;
     }
 
-    .navigation a { 
-        text-align: center; 
-        padding: 20px;
-        font-size: 15px; 
+    .aboutMe{
+        font-size: 17px;
+        transition: all 1s ease;
     }
 
-    .navigation li:last-of-type a {
-        border-bottom: none;
-    }
-
-    .navigation a:hover {
-        background: #656565b5;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-    .mySlides {
-        height: 1000px;
-    }
-
-    .main-page {
-        height: 1000px;
-    }
-  
-    img{
+    .aboutMe:before {
+        content: "";
+        display: block;
+        width: 20%;
+        height: 2px;
+        background: rgb(220, 220, 220);
+        left: 0;
+        top: 50%;
         position: absolute;
-        height: 700px;
+        transition: all 1s ease;
     }
+    
+    .aboutMe:after {
+        content: "";
+        display: block;
+        width: 20%;
+        height: 2px;
+        background: rgb(220, 220, 220);
+        right: 0;
+        top: 50%;
+        position: absolute;
+        transition: all 1s ease;
+    }
+}
 
-    .heading {
-        left:40%
-    }
-    
-    .heading1 {
-        top: 30%;
-        font-size: 15px;
-    }
-    
-    .heading2 {
-      top: 33%;
-      font-size: 15px;
-      font-weight: bold;
-    }
-    
-    .heading3 {
-      top: 45%;
-      font-size: 15px;
-    }
-    
-    .heading4 {
-      top: 69%;
-      font-size: 15px;
-      text-decoration: underline;
-    }
+@media all and (max-width: 950px) {
+.summary{
+    font-size: 14px;
+}
 }
 
 @media all and (max-width: 400px) {
   
-  .navigation {
-    flex-flow: column wrap;
-    width: 50%;
-  }
-
-  .navigation a { 
-    text-align: center; 
-    padding: 20px;
-    font-size: 15px; 
-  }
-
-  .navigation li:last-of-type a {
-    border-bottom: none;
-  }
-
-  .navigation a:hover {
-    background: #656565b5;
-    font-size: 20px;
-    cursor: pointer;
-  }
-
-  .mySlides {
-    height: 1000px;
-  }
-
-  .main-page {
-    height: 1000px;
-  }
-
-  img {
-    position: absolute;
-    height: 900px;
-  }
-
-  .heading {
-    left:55%
-  }
-
-  .heading1 {
-    top: 30%;
-    font-size: 15px;
-  }
-
-  .heading2 {
-    top: 33%;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  
-  .heading3 {
-    top: 45%;
-    font-size: 15px;
-  }
-  
-  .heading4 {
-    top: 69%;
-    font-size: 15px;
-    text-decoration: underline;
-  }
-  }
+}

@@ -37,53 +37,45 @@
             </div>
 
             <div class="infos">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <img 
-                                    id="cw"
-                                    src="img/name.png " 
-                                    onclick="tellJuliensName()"
-                                    alt="Name Icon"
-                                    onmouseenter="rotateCW('#cw')"
-                                    onmouseleave="rotateCCW('#cw')"
-                                >
-                            </td>
-
-                            <td>
-                                <img id="ccw" 
-                                     src="img/phone.png"
-                                     alt="Phone Icon"
-                                     onmouseenter="rotateCW('#ccw')"
-                                     onmouseleave="rotateCCW('#ccw')"
-                                     onclick="window.open('tel:900300400');"
-                                >
-                            </td>
-
-                            <td>
-                                <img
-                                    id="cw2"
-                                    src="img/address.png" 
-                                    onclick="location.href='https://www.google.com/maps/search/lasalle+college/@45.4913247,-73.5840682,17z/data=!3m1!4b1'" 
-                                    alt="Address Icon"
-                                    onmouseenter="rotateCW('#cw2')"
-                                    onmouseleave="rotateCCW('#cw2')"
-                                >
-                            </td>
-                            <td>
-                                <img 
-                                    id="ccw2"
-                                    src="img/email.png" 
-                                    alt="Email Icon"
-                                    onmouseenter="rotateCW('#ccw2')"
-                                    onmouseleave="rotateCCW('#ccw2')"
-                                    onClick="parent.location='mailto:julien@lasalle.com'"
-                                >
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="icons" id="cw">
+                    <img 
+                    id="cw"
+                    src="img/name.png " 
+                    onclick="tellJuliensName()"
+                    alt="Name Icon"
+                    onmouseenter="rotateCW('#cw')"
+                    onmouseleave="rotateCCW('#cw')"
+                    >
+                </div>
+                <div class="icons" id="ccw">
+                    <img id="ccw" 
+                    src="img/phone.png"
+                    alt="Phone Icon"
+                    onmouseenter="rotateCW('#ccw')"
+                    onmouseleave="rotateCCW('#ccw')"
+                    onclick="window.open('tel:900300400');"
+               >
+                </div>
+                <div class="icons" id="cw2">
+                    <img
+                    id="cw2"
+                    src="img/address.png" 
+                    onclick="location.href='https://www.google.com/maps/search/lasalle+college/@45.4913247,-73.5840682,17z/data=!3m1!4b1'" 
+                    alt="Address Icon"
+                    onmouseenter="rotateCW('#cw2')"
+                    onmouseleave="rotateCCW('#cw2')"
+                >
+                </div>
+                <div class="icons" id="ccw2">
+                    <img 
+                    id="ccw2"
+                    src="img/email.png" 
+                    alt="Email Icon"
+                    onmouseenter="rotateCW('#ccw2')"
+                    onmouseleave="rotateCCW('#ccw2')"
+                    onClick="parent.location='mailto:julien@lasalle.com'"
+                >
+                </div>
             </div>
 
             <div class="summary fade" id="summaryTitle">
