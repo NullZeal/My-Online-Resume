@@ -41,3 +41,7 @@ function rotateMeCounterClockWise(){
 
 var counter = rotation;
 document.getElementById("counter").innerHTML = rotation;
+
+function tellJuliensName() {
+    alert ("My full name is : Julien Pontbriand. Thanks for clicking me!");
+}
