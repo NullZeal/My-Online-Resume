@@ -108,7 +108,7 @@ img {
     display: inline-block;
     opacity: 0.95;
     background-color:rgba(208, 207, 207, 0.69);
-    width: 25%;
+    width: 20%;
     border-radius: 10% 10% 3% 10%;
     margin-top: 10%;
     margin-left:3%;
@@ -127,6 +127,13 @@ img {
     text-align: end;
     padding-left: 39%;
     font-weight: bolder;
+}
+
+#signature {
+    position: relative;
+    display: inline-block;
+    width: 15%;
+    right:18%;
 }
 
 /* button{
