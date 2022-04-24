@@ -65,8 +65,8 @@ img {
     position: absolute;
     left:20%;
     width: 80%;
-    height:150%;
-    background-color: rgba(240, 248, 255, 0.848);
+    height:140%;
+    background-color: rgba(197, 205, 211, 0.848);
 }
 .centeredText {
 
@@ -107,11 +107,11 @@ img {
     position: relative;
     display: inline-block;
     opacity: 0.95;
-    background-color: rgba(118, 115, 115, 0.835);
+    background-color:rgba(208, 207, 207, 0.885);
     width: 25%;
     border-radius: 10% 10% 3% 10%;
     margin-top: 10%;
-    border: 4px solid rgba(238, 238, 238, 0.885);
+    border: 4px solid rgba(11, 11, 11, 0.564);
     bottom:10%;
 }
 
@@ -122,36 +122,52 @@ img {
     transition: all 1s ease;
 }
 
-.picture button{
+.picture span {
+    text-align: end;
+    padding-left: 39%;
+    font-weight: bolder;
+}
+
+button{
     position: relative;
-    top: 120%;
-    padding:20px;
     width:49%;
-    background-color: rgba(84, 84, 84, 0.918);
+    background-color:rgba(208, 207, 207, 0.885);
     cursor:grab;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
+    font-size: larger;
+    padding:30px;
+    margin-top: 30px;
 }
 
 .infos{
     position: relative;
-    left:25%;
-    top:5%;
-    background-color: rgba(240, 248, 255, 0.724);
-    padding:20px;
+    padding:50px;
     border-radius: 2%;
-    width:50%;
+    width:93%;
+    color:rgb(39, 41, 43);
+    width:45%;
+    font-family: Calibri;
+    font-size: large;
+    font-family: Calibri;
+    font-size: larger;
 }
 
 .infos img {
-    max-width: 40px;
+    max-width: 50%;
+    margin-left:240px;
+}
+
+.infos img:hover{
+    transform: rotate(360deg);
+    -moz-transition:    -moz-transform 1s ease-out;
+    -o-transition:      -o-transform 1s ease-out;
+    -ms-transition:     -ms-transform 1s ease-out;
+    transition: all 1s ease-in-out;
 }
 
 .infos td{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: larger;
-    padding-bottom: 10px;
-    vertical-align: middle;
+    padding: 15px;
 }
 
 .infos td:nth-child(2) {
@@ -171,11 +187,9 @@ img {
 }
 
 #summary{
-    bottom: 5%;
 }
 
 #summaryTitle{
-    margin-top: 5%;
     font-weight: bolder;
     font-size: 30px;
     text-decoration: underline;

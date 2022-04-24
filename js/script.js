@@ -24,7 +24,7 @@ function automaticChange() {
 var rotation = 0;
 
 function rotateMeClockWise(){
-    rotation += 90;
+    rotation += 360;
     if (rotation === 3600)
     rotation = 0;
     document.querySelector("#julienPicture").style.transform = `rotate(${rotation}deg)`;
@@ -32,7 +32,7 @@ function rotateMeClockWise(){
 }
 
 function rotateMeCounterClockWise(){
-    rotation -= 90;
+    rotation -= 360;
     if (rotation === -3600)
     rotation = 0;
     document.querySelector("#julienPicture").style.transform = `rotate(${rotation}deg)`;
