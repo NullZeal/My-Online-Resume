@@ -21,27 +21,52 @@ function automaticChange() {
     timeout = setTimeout(automaticChange, 8000);   // call again automaticChange() after 7s
 }
 
-var rotation = 0;
+// var rotation = 0;
 
-function rotateMeClockWise(){
-    rotation += 360;
-    if (rotation === 3600)
-    rotation = 0;
-    document.querySelector("#julienPicture").style.transform = `rotate(${rotation}deg)`;
-    document.getElementById("counter").innerHTML = rotation;
-}
+// function rotateMeClockWise(){
+//     rotation += 360;
+//     if (rotation === 3600)
+//     rotation = 0;
+//     document.querySelector("#julienPicture").style.transform = `rotate(${rotation}deg)`;
+//     document.getElementById("counter").innerHTML = rotation;
+// }
 
-function rotateMeCounterClockWise(){
-    rotation -= 360;
-    if (rotation === -3600)
-    rotation = 0;
-    document.querySelector("#julienPicture").style.transform = `rotate(${rotation}deg)`;
-    document.getElementById("counter").innerHTML = rotation;
-}
+// function rotateMeCounterClockWise(){
+//     rotation -= 360;
+//     if (rotation === -3600)
+//     rotation = 0;
+//     document.querySelector("#julienPicture").style.transform = `rotate(${rotation}deg)`;
+//     document.getElementById("counter").innerHTML = rotation;
+// }
 
-var counter = rotation;
-document.getElementById("counter").innerHTML = rotation;
+// var counter = rotation;
+// document.getElementById("counter").innerHTML = rotation;
 
 function tellJuliensName() {
     alert ("My full name is : Julien Pontbriand. Thanks for clicking me!");
+}
+
+const ccw = document.getElementById("ccw");
+ccw.addEventListener("mouseover",()=>{
+   ccw.style.backgroundColor = "5px 5px 2px black";
+})
+
+ccw.addEventListener("mouseleave",()=>{
+   ccw.style.boxShadow = "0px 0px 0px";
+})
+
+// const ccw = document.getElementById("ccw");
+// ccw.addEventListener("mouseover",()=>{
+//    ccw.style.backgroundColor = "0,0,0";
+// })
+// ccw.addEventListener("mouseleave",()=>{
+//    ccw.style.transform =  'rotate(-180deg)';
+// })
+
+function rotateCW(id){
+    document.querySelector(id).style.transform = `rotate(360deg)`;
+}
+
+function rotateCCW(id){
+    document.querySelector(id).style.transform = `rotate(0deg)`;
 }
