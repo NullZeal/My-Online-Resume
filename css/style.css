@@ -8,10 +8,9 @@ body{
   
   background-color: #111111;
   overflow: hidden;
+
 }
 
-
-/* MAIN PAGE CONTENT */
 
 .identityDisplay{
   position: fixed;
@@ -128,8 +127,6 @@ font-size: 40px;
   flex-direction: row;
 }
 
-
-
 .navigation a:hover {
   background: #656565b5;
   font-size: 30px;
@@ -140,7 +137,11 @@ font-size: 40px;
 
 
 img {
-  max-width: 100%;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
 }
 
 /* Fading animation */
@@ -179,20 +180,7 @@ img {
 
 /* SMALLER SCREENS DISPLAY CHANGES */
 
-
-@media all and (max-width: 1130px) {
-
-    img{
-      display: none;
-    }
-
-}
-
-
-
 @media all and (max-width: 800px) {
-
-
     
   .navigation {
     flex-flow: column wrap;
@@ -252,17 +240,13 @@ img {
   .heading {
     left:40%;
   }
-}
+
     .navigation a:hover {
       background: #656565b5;
       font-size: 15px;
       cursor: pointer;
     }
 
-
-
-  @media (max-width: 570px) {
-  
     .heading1 {
       font-size: 15px;
     }
@@ -279,8 +263,20 @@ img {
       .heading4 {
         font-size: 15px;
       }  
+
+  @media (max-width: 370px) {
+    .heading2 {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .heading {
+      left:35%;
+    }
+
   }
 
-}
+}   
+
 
 
