@@ -193,7 +193,7 @@ body{
 
 .infos .icons {
     transition: all 1s ease-in-out;
-    width: 100px;
+    width: 75px;
     padding: 5%;
 }
 
@@ -201,13 +201,6 @@ body{
     max-width: 100%;
 }
 
-
-
-
-
-
-/* Fading animation */
-/* The prefix -webkit- is for Safari browser */
 .fade {
     -webkit-animation-name: fade;            
     -webkit-animation-duration: 2s;
@@ -330,44 +323,3 @@ body{
 
 
 }
-
-@media all and (max-width: 400px) {
-  
-}
-
-
-
-/* .infos img:hover{
-    transform: rotate(360deg);
-    -moz-transition:    -moz-transform 1s ease-out;
-    -o-transition:      -o-transform 1s ease-out;
-    -ms-transition:     -ms-transform 1s ease-out;
-
-}
-
-.infos .cw:hover{
-    transform: rotate(-360deg);
-    -moz-transition:    -moz-transform 1s ease-out;
-    -o-transition:      -o-transform 1s ease-out;
-    -ms-transition:     -ms-transform 1s ease-out;
-    transition: all 1s ease-in-out;
-} */
-
-
-
-/* button{
-    position: relative;
-    width:49%;
-    background-color:rgba(208, 207, 207, 0.885);
-    cursor:grab;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    font-size: larger;
-    padding:30px;
-    margin-top: 30px;
-    transition: all 1s ease-in-out;
-}
-
-button:hover{
-    background-color:rgba(130, 130, 130, 0.885);
-} */

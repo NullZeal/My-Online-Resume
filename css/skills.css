@@ -143,7 +143,7 @@ body{
 }
 
 .progressbar{
-    background-color: rgb(69, 7, 81);
+    background-color: rgba(64, 64, 65, 0.874);
     line-height: 1.5;
     font-size: 15px;
 }
@@ -161,5 +161,17 @@ body{
 }
 
 .skillscontainer{
-    margin-top: 5%;
+    margin-top: 3%;
+}
+
+.percentagenumber {
+    text-align: center;
+}
+
+h2 {
+    font-size: larger;
+}
+
+.estimationbutton{
+    float: right;
 }
