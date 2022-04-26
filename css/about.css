@@ -7,20 +7,14 @@ body{
     background-color: #111111;
 }
 
-
-
 .background{
-    position: absolute;
-    width: 100%;
-}
-
-.background img{
     position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity: 0.7;
 }
-
-/* img {
-    max-width: 100%;
-} */
   
 /* ASIDE CONTENT */
   
@@ -81,19 +75,19 @@ body{
     text-align: center;  }
 
 .aboutMe {
-    margin-top: 5%;
+    margin-top: 2%;
     font-size: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: aliceblue;
-    background-color: rgba(11, 11, 11, 0.564);
+    color: #111111;
 }
 .aboutMe:before {
     content: "";
     display: block;
     width: 40%;
     height: 2px;
-    background: rgb(220, 220, 220);
+    background-color: #111111;
+    ;
     left: 0;
     top: 50%;
     position: absolute;
@@ -104,7 +98,7 @@ body{
     display: block;
     width: 40%;
     height: 2px;
-    background: rgb(220, 220, 220);
+    background-color: #111111;
     right: 0;
     top: 50%;
     position: absolute;
@@ -251,7 +245,6 @@ body{
         display: block;
         width: 20%;
         height: 2px;
-        background: rgb(220, 220, 220);
         left: 0;
         top: 50%;
         position: absolute;
@@ -263,7 +256,6 @@ body{
         display: block;
         width: 20%;
         height: 2px;
-        background: rgb(220, 220, 220);
         right: 0;
         top: 50%;
         position: absolute;
@@ -311,7 +303,6 @@ body{
 
     .background {
         display: none;
-        transition: all 1s ease;
     }
 
     .summaryAndpicture {
@@ -319,6 +310,12 @@ body{
     }
 
     .identityDisplay{
+    }
+
+    .infos .icons {
+        transition: all 1s ease-in-out;
+        width: 45px;
+        padding: 3%;
     }
 
 
