@@ -70,3 +70,37 @@ function rotateCW(id){
 function rotateCCW(id){
     document.querySelector(id).style.transform = `rotate(0deg)`;
 }
+
+function moveskill1() {
+    var elem = document.getElementById("innerprogressbar1");   
+    var width = 0;
+    var id = setInterval(frame, 13);
+    
+    function frame() {
+      if (width >= 80) {
+        clearInterval(id);
+      } 
+      else {
+        width++; 
+        elem.style.width = width + '%'; 
+        document.getElementById("percent1").innerHTML = width * 1  + '%';
+      }
+    }
+}
+
+function moveskill2() {
+    var elem = document.getElementById("innerprogressbar2");   
+    var width = 0;
+    var id = setInterval(frame, 13);
+    
+    function frame() {
+      if (width >= 60) {
+        clearInterval(id);
+      } 
+      else {
+        width++; 
+        elem.style.width = width + '%'; 
+        document.getElementById("percent2").innerHTML = width * 1  + '%';
+      }
+    }
+}
