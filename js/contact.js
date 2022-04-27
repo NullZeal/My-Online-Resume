@@ -16,9 +16,31 @@ function initMap() {
   
   window.initMap = initMap;
 
-
-function submit1() {
-    alert ("Submit successful!");
-}
-
 document.getElementById('newUsername').addEventListener("change", checkInput);
+
+
+function validateForm() {
+
+    var nameToValidate = document.forms["myform"]["name"].value;
+    var emailToValidate = document.forms["myform"]["email"].value;
+    var phoneToValidate = document.forms["myform"]["phone"].value;
+
+    var regexemail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    var regexphone = /^(\+\d{1,3}[ ])?(\(\d{3}\)[ ]|\d{3}-)\d{3}-\d{4}$/;
+    
+    if (nameToValidate == ""){
+        alert("Please input a name!");
+        return false;
+    }
+
+    if (!regexemail.test(emailToValidate)){
+        alert("Please input a valid email!");
+        return false;
+    }
+
+    if (!regexphone.test(phoneToValidate)){
+        alert("Please input a valid phone number!");
+        return false;
+    }
+}

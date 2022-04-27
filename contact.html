@@ -81,13 +81,13 @@
                 <div class="contactform">
                     CONTACT ME
 
-                    <form id="contactform" method="post">
+                    <form action="actionpage.html" name="myform" id="contactform" method="post" onsubmit="return validateForm()">
 
                         <input type="text" name="name" id="contact_name" placeholder="Your Name";>
                         <input type="email" name="email" id="contact_email" placeholder="Your Email">
                         <input type="tel" name="phone" id="contact_phone" placeholder="Your Phone">
                         <textarea rows="5" cols="60" name="text" placeholder="Your Message"></textarea>
-                        <input type="submit" value="Submit my message" onclick="submit1()" >
+                        <input type="submit" value="Submit my message">
 
                     </form>
                 </div>
