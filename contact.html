@@ -83,26 +83,13 @@
                 <div class="contactform">
                     CONTACT ME
 
-                    <form id="contactform" method="post" action="contact.php">
+                    <form id="contactform" method="post">
 
-                        <input type="text" name="name" id="contact_name" placeholder="Your Name" class="wow fadeInRight animated" style="animation-name: fadeInRight;">
-
-                        
-                        <input type="text" name="email" id="contact_name" placeholder="Your Email" class="wow fadeInRight animated" style="animation-name: fadeInRight;">
-
-                        
-                        <input type="text" name="phone" id="contact_name" placeholder="Your Phone" class="wow fadeInRight animated" style="animation-name: fadeInRight;">
-
-                        
-                        <input type="text" name="message" id="contact_name" placeholder="Your Message" class="wow fadeInRight animated" style="animation-name: fadeInRight;">
-
-                        <button onclick="submit()">
-                            Submit my message
-                        </button>
-
-
-
-
+                        <input type="text" name="name" id="contact_name" placeholder="Your Name";>
+                        <input type="email" name="email" id="contact_email" placeholder="Your Email">
+                        <input type="tel" name="phone" id="contact_phone" placeholder="Your Phone">
+                        <textarea rows="5" cols="60" name="text" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Submit my message" onclick="submit1()" >
 
                     </form>
 

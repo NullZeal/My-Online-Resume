@@ -17,6 +17,8 @@ function initMap() {
   window.initMap = initMap;
 
 
-function submit() {
-    alert ("Submit successdful!");
+function submit1() {
+    alert ("Submit successful!");
 }
+
+document.getElementById('newUsername').addEventListener("change", checkInput);

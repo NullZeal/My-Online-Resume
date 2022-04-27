@@ -163,12 +163,6 @@ body{
   }
 }
 
-.progressbar{
-    background-color: rgba(64, 64, 65, 0.874);
-    line-height: 1.5;
-    font-size: 15px;
-}
-
 .innerprogressbar{
     height:24px;
     width:0%;
@@ -206,12 +200,18 @@ h2 {
     width: 100%;
   }
   
-input{
+input, textarea{
+    
     display: block;
     margin-top: 10px;
     line-height: 30px;
     width: 100%;
+    font-family:"Menlo", sans-serif;
 
+}
+
+#contact_message{
+    line-height: 160px;
 }
 
 @keyframes fadeInRight {
