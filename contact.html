@@ -15,20 +15,6 @@
 </head>
 
 <body>
-    <div class="background">
-
-        <div class="mySlides fade">
-            <img src="img/image13.jpg" alt="Technological background1">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="img/image14.jpg" alt="Technological background2">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="img/image15.jpg" alt="Technological background3">
-        </div>
-    </div>
 
     <aside>
         <ul class="navigation">
@@ -81,15 +67,15 @@
                 <div class="contactform">
                     CONTACT ME
 
-                    <form action="actionpage.html" name="myform" id="contactform" method="post" onsubmit="return validateForm()">
+                    <form action="actionpage.html" name="myform" id="contactform" onsubmit="return validateForm()" method="post">
 
                         <input type="text" name="name" id="contact_name" placeholder="Your Name";>
                         <input type="email" name="email" id="contact_email" placeholder="Your Email">
                         <input type="tel" name="phone" id="contact_phone" placeholder="Your Phone">
                         <textarea rows="5" cols="60" name="text" placeholder="Your Message"></textarea>
                         <input type="submit" value="Submit my message">
-
                     </form>
+
                 </div>
             </div>
         </div>
