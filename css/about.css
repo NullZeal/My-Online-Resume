@@ -183,6 +183,7 @@ body{
     display: flex;
     justify-content:space-evenly;
     flex-direction: row;
+    max-height: 208px;
 }
 
 .infos .icons {
