@@ -15,3 +15,8 @@ function initMap() {
   }
   
   window.initMap = initMap;
+
+
+function submit() {
+    alert ("Submit successdful!");
+}

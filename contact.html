@@ -54,30 +54,73 @@
             
             </div>
 
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer> </script>
+            
 
-            <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-            defer
-          ></script>
-      
+            <div class="addresspanel">
 
-            <div class="skillscontainer">
+                <div class="addresscontainer">
 
-                <h2>Address</h2>
-                <p>1234, Ramiro Street, Montreal, 1H1 H0H</p>
+                    <div class="skillscontainer">
+    
+                        <h2>Address</h2>
+                        <p>1234, Ramiro Street, Montreal, 1H1 H0H</p>
+                    </div>
+        
+                    <div class="skillscontainer">
+        
+                        <h2>Phone</h2>
+                        <p>514-555-5555</p>
+                    </div>
+        
+                    <div class="skillscontainer">
+        
+                        <h2>Email</h2>
+                        <p>julien.pontbriand@lasalle.com</p>
+                    </div>
+                </div>
+
+                <div class="contactform">
+                    CONTACT ME
+
+                    <form id="contactform" method="post" action="contact.php">
+
+                        <input type="text" name="name" id="contact_name" placeholder="Your Name" class="wow fadeInRight animated" style="animation-name: fadeInRight;">
+
+                        
+                        <input type="text" name="email" id="contact_name" placeholder="Your Email" class="wow fadeInRight animated" style="animation-name: fadeInRight;">
+
+                        
+                        <input type="text" name="phone" id="contact_name" placeholder="Your Phone" class="wow fadeInRight animated" style="animation-name: fadeInRight;">
+
+                        
+                        <input type="text" name="message" id="contact_name" placeholder="Your Message" class="wow fadeInRight animated" style="animation-name: fadeInRight;">
+
+                        <button onclick="submit()">
+                            Submit my message
+                        </button>
+
+
+
+
+
+                    </form>
+
+
+
+                </div>
+
+
+
+
+
+
             </div>
 
-            <div class="skillscontainer">
 
-                <h2>Phone</h2>
-                <p>514-555-5555</p>
-            </div>
 
-            <div class="skillscontainer">
 
-                <h2>Email</h2>
-                <p>julien.pontbriand@lasalle.com</p>
-            </div>
+
 
 
 
