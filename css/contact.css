@@ -302,7 +302,6 @@ input, textarea{
 }
 
 
-
 @media all and (max-width: 650px) {
 
     .addresspanel{
@@ -311,7 +310,6 @@ input, textarea{
         flex-direction: column;
         justify-content: space-evenly;
     }
-
 }
 
 
