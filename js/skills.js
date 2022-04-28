@@ -3,7 +3,6 @@ moveskill2();
 moveskill3();
 moveskill4();
 
-
 function moveskill1() {
     var elem = document.getElementById("innerprogressbar1");   
     var width = 0;

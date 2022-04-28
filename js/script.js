@@ -21,9 +21,6 @@ function automaticChange() {
     timeout = setTimeout(automaticChange, 8000);   // call again automaticChange() after 7s
 }
 
-
-
-
 // const ccw = document.getElementById("ccw");
 // ccw.addEventListener("mouseover",()=>{
 //    ccw.style.backgroundColor = "0,0,0";
