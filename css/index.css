@@ -81,8 +81,6 @@ font-size: 40px;
   opacity: 0.1;
 }
 
-/* ASIDE CONTENT */
-
 .navigation {
   position: fixed;
 
@@ -126,9 +124,6 @@ font-size: 40px;
   cursor: pointer;
 }
 
-/* END OF ASIDE CONTENT */
-
-
 img {
   position: fixed;
   top:0;
@@ -137,8 +132,6 @@ img {
   right:0;
 }
 
-/* Fading animation */
-/* The prefix -webkit- is for Safari browser */
 .fade {
   -webkit-animation-name: fade;            
   -webkit-animation-duration: 2s;
@@ -147,7 +140,6 @@ img {
   animation-duration: 2s;
 }
 
-/* the -webkit-animation fade */
 @-webkit-keyframes fade {
   from {
       opacity: .1
@@ -158,7 +150,6 @@ img {
   }
 }
 
-/* the animation fade */
 @keyframes fade {
   from {
       opacity: .1
@@ -168,9 +159,6 @@ img {
       opacity: 1
   }
 }
-
-
-/* SMALLER SCREENS DISPLAY CHANGES */
 
 @media all and (max-width: 950px) {
     
@@ -267,6 +255,10 @@ img {
         padding: 5px;
       }
 
+      .navigation li a{
+        width: 110%;
+    }
+
   @media (max-width: 370px) {
     .heading2 {
       font-size: 15px;
@@ -277,7 +269,6 @@ img {
         padding-left: 0%;
       }
     }
-
   }
 
 

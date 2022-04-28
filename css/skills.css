@@ -11,7 +11,6 @@ body{
   
   }
 
-
   .background {
     position: fixed;
     top:0;
@@ -20,9 +19,6 @@ body{
     right:0;
     opacity: 0.1;
 }
-
-
-/* ASIDE CONTENT */
   
 .navigation {
     position: fixed;
@@ -70,9 +66,7 @@ body{
     left:20%;
     color: aliceblue;
     width: 80%;
-
 }
-
 
 .centeredText {
 
@@ -109,9 +103,6 @@ body{
     position: absolute;
 }
 
-
-/* Fading animation */
-/* The prefix -webkit- is for Safari browser */
 .fade {
   -webkit-animation-name: fade;            
   -webkit-animation-duration: 2s;
@@ -120,7 +111,6 @@ body{
   animation-duration: 2s;
 }
 
-/* the -webkit-animation fade */
 @-webkit-keyframes fade {
   from {
       opacity: .1
@@ -131,7 +121,6 @@ body{
   }
 }
 
-/* the animation fade */
 @keyframes fade {
   from {
       opacity: .1
@@ -175,11 +164,6 @@ h2 {
 .estimationbutton{
     float: right;
 }
-
-
-
-
-
 
 @media all and (max-width: 1000px) {
 
@@ -237,5 +221,11 @@ h2 {
 
     p{
         font-size: 12px;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .navigation li a{
+        width: 110%;
     }
 }
