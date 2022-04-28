@@ -172,11 +172,15 @@ img {
 
 /* SMALLER SCREENS DISPLAY CHANGES */
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 950px) {
     
   .navigation {
     flex-flow: column wrap;
   }
+
+.navigation li a{
+    font-size: 10px;
+}
 
   .navigation a { 
     text-align: center; 
@@ -190,7 +194,7 @@ img {
 
   .navigation a:hover {
     background: #656565b5;
-    font-size: 20px;
+    font-size: 10px;
     cursor: pointer;
   }
 
