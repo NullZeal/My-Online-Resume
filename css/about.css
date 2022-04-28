@@ -16,8 +16,6 @@ body{
     opacity: 0.7;
 }
   
-/* ASIDE CONTENT */
-  
 .navigation {
     position: fixed;
     top: 0;
@@ -56,11 +54,6 @@ body{
     font-size: 30px;
     cursor: pointer;
 }
-
-/* END OF ASIDE CONTENT */
-
-
-/* MAIN PAGE CONTENT */
 
 .mainpage{
     height: inherit;
@@ -106,8 +99,6 @@ body{
     top: 50%;
     position: absolute;
 }
-
-
 
 .summaryAndpicture{
     display: flex;
@@ -215,7 +206,6 @@ body{
     max-height: max-content;
 }
 
-/* the -webkit-animation fade */
 @-webkit-keyframes fade {
     from {
         opacity: .1
@@ -226,7 +216,6 @@ body{
     }
 }
 
-/* the animation fade */
 @keyframes fade {
     from {
         opacity: .1
@@ -236,10 +225,6 @@ body{
         opacity: 1
     }
 }
-
-/* END OF MAIN PAGE CONTENT */
-
-/* SMALLER SCREENS DISPLAY CHANGES */
 
 @media all and (max-width: 1000px) {
 
@@ -287,7 +272,6 @@ body{
     .picture{
         display: none;
     }
-
     
     #signature {
         display: none;
@@ -309,7 +293,6 @@ body{
         cursor: pointer;
     }
 
-
     .navigation li a{
         font-size: 10px;
     }
@@ -318,14 +301,13 @@ body{
         justify-content: center;
     }
 
-}
+    .infos .icons{
+        max-width: 45px;
+        max-height: 45px;
+    }
 
-@media all and (max-width: 950px) {
-
-        .infos .icons{
-            max-width: 45px;
-            max-height: 45px;
-        }
-
+    .navigation li a{
+        width: 110%;
+    }
 
 }
