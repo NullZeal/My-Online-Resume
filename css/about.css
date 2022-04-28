@@ -163,11 +163,11 @@ body{
     position: relative;
     display: inline-block;
     opacity: 0.8;
-    padding-left: 5%;
 }
 
 #signature img{
-    width: 50%;
+    width: 60%;
+    height: 150px;
 }
 
 .infos{
