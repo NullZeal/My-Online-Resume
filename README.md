@@ -1,3 +1,3 @@
 # myonlineresume
 
-Web project for learning purpose...and for fun!
+Web project for learning purpose in pure HTML, CSS and javascript.
